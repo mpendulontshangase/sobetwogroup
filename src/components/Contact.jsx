@@ -109,7 +109,7 @@ function Contact() {
                   </svg>
                 </div>
                 <div className="ml-3 text-[#6B5446]">
-                  +27 83 456 7890
+                  083 496 4104
                 </div>
               </div>
             </div>

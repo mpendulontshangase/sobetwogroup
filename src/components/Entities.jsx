@@ -13,7 +13,7 @@ function Entities() {
       category: "Technology"
     },
     {
-      name: "GetJob",
+      name: "Drimmaz",
       description: "A dynamic job advertising platform connecting talented professionals with opportunities across Africa, revolutionizing the recruitment landscape.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
       category: "Recruitment"
@@ -31,10 +31,10 @@ function Entities() {
       category: "Luxury Fashion"
     },
     {
-      name: "Sobetwo Properties",
-      description: "A forward-thinking property investment company focused on developing and managing premium real estate portfolios across strategic locations.",
+      name: "LifeTimeScope",
+      description: "A comprehensive news platform bringing you the latest world news, articles, and insights. Stay informed with curated content from trusted sources.",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      category: "Real Estate"
+      category: "News & Media"
     }
   ];
 
@@ -54,7 +54,14 @@ function Entities() {
           {entities.map((entity, index) => (
             <div 
               key={index} 
-              className="bg-[#F5EFE7] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105"
+              className="bg-[#F5EFE7] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 cursor-pointer"
+              onClick={() => {
+                if (entity.name === "LifeTimeScope") {
+                  window.open("https://lifetimescope.com/", "_blank");
+                } else if (entity.name === "Drimmaz") {
+                  window.open("https://drimmaz.com/", "_blank");
+                }
+              }}
             >
               <div className="h-48 overflow-hidden">
                 <img
