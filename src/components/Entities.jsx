@@ -42,10 +42,10 @@ function Entities() {
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-[#4A3B32] sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
             Our Entities
           </h2>
-          <p className="mt-4 text-lg text-[#6B5446]">
+          <p className="mt-4 text-lg text-gray-600">
             Diverse companies united under the Sobetwo Group umbrella, each driving innovation in their respective fields
           </p>
         </div>
@@ -54,7 +54,7 @@ function Entities() {
           {entities.map((entity, index) => (
             <div 
               key={index} 
-              className="bg-[#F5EFE7] rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 cursor-pointer"
+              className="bg-gray-100 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 cursor-pointer"
               onClick={() => {
                 if (entity.name === "LifeTimeScope") {
                   window.open("https://lifetimescope.com/", "_blank");
@@ -71,16 +71,16 @@ function Entities() {
                 />
               </div>
               <div className="p-6">
-                <span className="text-[#967969] text-sm font-semibold">
+                <span className="text-gray-500 text-sm font-semibold">
                   {entity.category}
                 </span>
-                <h3 className="mt-2 text-xl font-bold text-[#4A3B32]">
+                <h3 className="mt-2 text-xl font-bold text-black">
                   {entity.name}
                 </h3>
-                <p className="mt-3 text-[#6B5446]">
+                <p className="mt-3 text-gray-600">
                   {entity.description}
                 </p>
-                <button className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#967969] hover:bg-[#7D6557] transition-colors duration-200">
+                <button className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-gray-800 transition-colors duration-200">
                   Learn More
                 </button>
               </div>

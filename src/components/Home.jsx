@@ -2,21 +2,21 @@ function Home() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <div className="relative bg-[#967969]">
+      <div className="relative bg-black">
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover"
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
             alt="Modern office building"
           />
-          <div className="absolute inset-0 bg-[#967969] mix-blend-multiply" />
+          <div className="absolute inset-0 bg-black mix-blend-multiply opacity-60" />
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
               Welcome to Sobetwo Group
             </h1>
-            <p className="mt-3 max-w-md mx-auto text-base text-[#E8DCD1] sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            <p className="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               Your trusted partner in innovative business solutions
             </p>
           </div>
@@ -24,7 +24,7 @@ function Home() {
       </div>
 
       {/* Features Section */}
-      <div className="py-12 bg-[#F5EFE7]">
+      <div className="py-12 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {/* Feature 1 */}
@@ -36,8 +36,8 @@ function Home() {
                   alt="Innovation"
                 />
               </div>
-              <h3 className="text-lg font-medium text-[#4A3B32]">Innovation</h3>
-              <p className="mt-2 text-[#6B5446]">
+              <h3 className="text-lg font-medium text-black">Innovation</h3>
+              <p className="mt-2 text-gray-600">
                 Leading the way in technological advancement and creative solutions
               </p>
             </div>
@@ -51,8 +51,8 @@ function Home() {
                   alt="Excellence"
                 />
               </div>
-              <h3 className="text-lg font-medium text-[#4A3B32]">Excellence</h3>
-              <p className="mt-2 text-[#6B5446]">
+              <h3 className="text-lg font-medium text-black">Excellence</h3>
+              <p className="mt-2 text-gray-600">
                 Delivering exceptional quality in every project we undertake
               </p>
             </div>
@@ -66,8 +66,8 @@ function Home() {
                   alt="Partnership"
                 />
               </div>
-              <h3 className="text-lg font-medium text-[#4A3B32]">Partnership</h3>
-              <p className="mt-2 text-[#6B5446]">
+              <h3 className="text-lg font-medium text-black">Partnership</h3>
+              <p className="mt-2 text-gray-600">
                 Building lasting relationships with our clients and partners
               </p>
             </div>
@@ -78,4 +78,4 @@ function Home() {
   );
 }
 
-export default Home; 
+export default Home;

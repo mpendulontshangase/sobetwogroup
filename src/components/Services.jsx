@@ -16,9 +16,14 @@ function Services() {
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1715&q=80"
     },
     {
-      title: "Financial Advisory",
-      description: "Expert financial guidance to optimize your business performance and maximize returns.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1711&q=80"
+      title: "Tech Solutions",
+      description: "Cutting-edge technology solutions designed to solve real-world business challenges and accelerate growth.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    },
+    {
+      title: "Supply Chain",
+      description: "End-to-end supply chain management to streamline operations, reduce costs, and improve delivery performance.",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
     }
   ];
 
@@ -26,7 +31,7 @@ function Services() {
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
             Our Services
           </h2>
           <p className="mt-4 text-lg text-gray-500">
@@ -37,7 +42,7 @@ function Services() {
         <div className="mt-16">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
             {services.map((service, index) => (
-              <div key={index} className="bg-[#F5EFE7] rounded-lg overflow-hidden shadow-lg">
+              <div key={index} className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <div className="h-48 overflow-hidden">
                   <img
                     className="w-full h-full object-cover"
@@ -46,9 +51,9 @@ function Services() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-[#4A3B32]">{service.title}</h3>
-                  <p className="mt-4 text-[#6B5446]">{service.description}</p>
-                  <button className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-[#967969] hover:bg-[#7D6557]">
+                  <h3 className="text-xl font-bold text-black">{service.title}</h3>
+                  <p className="mt-4 text-gray-600">{service.description}</p>
+                  <button className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-black hover:bg-gray-800">
                     Learn More
                   </button>
                 </div>
@@ -58,11 +63,11 @@ function Services() {
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold text-gray-900">
+          <h3 className="text-2xl font-bold text-black">
             Why Choose Sobetwo Group?
           </h3>
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="bg-[#F5EFE7] p-6 rounded-lg shadow">
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
               <div className="h-32 rounded-lg overflow-hidden mb-4">
                 <img
                   className="w-full h-full object-cover"
@@ -70,12 +75,12 @@ function Services() {
                   alt="Expertise"
                 />
               </div>
-              <h4 className="text-lg font-semibold text-[#4A3B32]">Expertise</h4>
-              <p className="mt-2 text-[#6B5446]">
+              <h4 className="text-lg font-semibold text-black">Expertise</h4>
+              <p className="mt-2 text-gray-600">
                 Years of industry experience and professional expertise
               </p>
             </div>
-            <div className="bg-[#F5EFE7] p-6 rounded-lg shadow">
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
               <div className="h-32 rounded-lg overflow-hidden mb-4">
                 <img
                   className="w-full h-full object-cover"
@@ -83,12 +88,12 @@ function Services() {
                   alt="Customization"
                 />
               </div>
-              <h4 className="text-lg font-semibold text-[#4A3B32]">Customization</h4>
-              <p className="mt-2 text-[#6B5446]">
+              <h4 className="text-lg font-semibold text-black">Customization</h4>
+              <p className="mt-2 text-gray-600">
                 Tailored solutions designed for your specific needs
               </p>
             </div>
-            <div className="bg-[#F5EFE7] p-6 rounded-lg shadow">
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
               <div className="h-32 rounded-lg overflow-hidden mb-4">
                 <img
                   className="w-full h-full object-cover"
@@ -96,8 +101,8 @@ function Services() {
                   alt="Results"
                 />
               </div>
-              <h4 className="text-lg font-semibold text-[#4A3B32]">Results</h4>
-              <p className="mt-2 text-[#6B5446]">
+              <h4 className="text-lg font-semibold text-black">Results</h4>
+              <p className="mt-2 text-gray-600">
                 Proven track record of delivering successful outcomes
               </p>
             </div>
@@ -108,4 +113,4 @@ function Services() {
   );
 }
 
-export default Services; 
+export default Services;
